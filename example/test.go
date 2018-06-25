@@ -29,8 +29,8 @@ func main() {
 
 
     t.BeginTran()
-    re1, _ := t.Exec("update user_01 set money=money-1 where name='alex1'")
-    re2, _ := t.Exec("update user_02 set money=money+1 where name='alex2'")
+    re1, _ := t.Exec("update user_01 set money=money-? where name='alex1'",2)
+    re2, _ := t.Exec("update user_02 set money=money+? where name='alex2'",2)
     fmt.Println(re1, re2)
     if re1 > 0 && re2 > 0 {
         t.Commit()

@@ -55,3 +55,19 @@ if re1 > 0 && re2 > 0 {
 }
 
 ```
+
+
+用 ? 好来做参数占位符 和原生mysql包的操作一样
+
+```
+t.BeginTran()
+re1, _ := t.Exec("update user_01 set money=money-? where name='alex1'",1)
+re2, _ := t.Exec("update user_02 set money=money+? where name='alex2'",1)
+fmt.Println(re1, re2)
+if re1 > 0 && re2 > 0 {
+    t.Commit()
+} else {
+    t.RollBack()
+}
+
+```
