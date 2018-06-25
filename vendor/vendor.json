@@ -1,0 +1,28 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "ydeDWaWzMky1R/z97JtvDb3vZY8=",
+			"path": "database/sql",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "xP1PzHaYbP6yJLipAivO1nCtBjA=",
+			"path": "fmt",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "K6icEVf2CuBzhLm/MGpRd1btshM=",
+			"path": "github.com/go-sql-driver/mysql",
+			"revision": "1a676ac6e4dce68e9303a1800773861350374a9e",
+			"revisionTime": "2018-03-08T10:03:10Z"
+		},
+		{
+			"checksumSHA1": "oHZUSIYA0ca9MNDFN4NfweNnDvw=",
+			"path": "io/ioutil",
+			"revision": ""
+		}
+	],
+	"rootPath": "tiger"
+}
