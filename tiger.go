@@ -3,7 +3,6 @@ package tiger
 import (
     "fmt"
     "database/sql"
-    "strconv"
     _"github.com/go-sql-driver/mysql"
 )
 
@@ -44,8 +43,7 @@ func (tiger *Tiger)Commit() error {
 
 //数据库连接
 func (tiger *Tiger)Connect(host string, username string, password string, port string, database string, charset string) *Tiger {
-    port2, _ := strconv.Atoi(port)
-    dsn := fmt.Sprintf("%v:%v@tcp(%v:%v)/%v?charset=%v", username, password, host, port2, database, charset)
+    dsn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?charset=%s", username, password, host, port, database, charset)
     db, err := sql.Open("mysql", dsn)
     if ( err != nil) {
         fmt.Println("faild to open mysql:")
