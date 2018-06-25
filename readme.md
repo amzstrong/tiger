@@ -20,7 +20,7 @@ fmt.Println(res)
 
 
 ```
-插入数据  返回-1,err 的时候说明插入失败
+插入数据   返回插入id  返回-1,err 的时候说明插入失败
 
 ```
 t := new(tiger.Tiger)
@@ -30,7 +30,7 @@ fmt.Println(re1)
 
 ```
 
-更新删除  返回-1 ,err 说明操作失败
+更新删除 返回影响行数  返回-1 ,err 说明操作失败
 
 ```
 t := new(tiger.Tiger)
