@@ -3,7 +3,13 @@
 简单高效,安全可靠,链式操作,天下武功唯快不破
 
 
+
 使用实例
+
+```
+go get github.com/amzstrong/tiger
+
+```
 
 返回一行 map
 
