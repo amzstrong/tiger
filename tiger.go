@@ -8,8 +8,6 @@ import (
 
 
 
-//全局变量 数据库配置文件
-var DbConfig map[string]map[string]string
 
 type Tiger struct {
     rows        *sql.Rows
