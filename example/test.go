@@ -21,6 +21,7 @@ func main() {
     resu := t.Connect("127.0.0.1", "root", "root", "3306", "test", "utf8").Query("select * from test").FetchAll()
     fmt.Println(resu)
     db := t.Connect("127.0.0.1", "root", "root", "3306", "test", "utf8")
+    // 可以用占位符 绑定参数
     r1, _ := db.Insert("INSERT INTO test(a, b ) VALUES(? ,? )", 2, 1)
     fmt.Println(r1)
 
